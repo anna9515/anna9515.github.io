@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>careteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box" style="background: rgb(193 253 65 / 65%);margin-right: -3px;">
+    <img src="logo.png" alt="每日飲食建議量圖" style="height: 20%; width: 20%;align-items: center;"></div>
+    <div class="box1">
+        <p class="h1"><img src="CA VECTOER.png" style="width: 6%;">  一天需要多少熱量 <img src="CA VECTOER.png" style="width: 6%;"></p>
+        <form id="calorie-form">
+            <label for="height">身高（cm）：</label>
+            <input class="input1" type="text" id="height" inputmode="decimal" required><br><br>
+            
+            <label for="weight">體重（kg）：</label>
+            <input class="input1" type="text" id="weight" inputmode="decimal" required><br><br>
+            
+            <label for="age">年齡：</label>
+            <input class="input1" type="text" id="age" inputmode="decimal" required><br><br>
+            
+            <label>性別：</label>
+            <input type="radio" name="gender" value="male" checked> 男性
+            <input type="radio" name="gender" value="female"> 女性<br><br>
+            
+            <p class="h1"><img src="CA VECTOER.png" style="width: 6%;"> 每天的活動量 <img src="CA VECTOER.png" style="width: 6%;"></p>
+            <div style="flex-direction: row;justify-content: center;display: flex;">   
+            <div style="width: 50%;min-width: 130px;margin-right: -10px;">
+            <input class="select2" type="button" value="輕度工作" data-intensity="輕度">
+            <p class="intensity-description" style="letter-spacing: 2px;font-size: 11px;"></p>
+            </div>
+            <div style="width: 50%;min-width: 130px;margin-right: -10px;">
+            <input class="select2" type="button" value="中度工作" data-intensity="中度">
+            <p class="intensity-description" style="letter-spacing: 2px;font-size: 11px;"></p>
+            </div>
+            <div style="width: 50%;min-width: 130px;margin-right: -10px;">
+            <input class="select2" type="button" value="重度工作" data-intensity="重度">
+            <p class="intensity-description" style="letter-spacing: 2px;font-size: 11px;"></p>
+            </div>
+            </div>    
+            <input class="select" type="button" value="送出" onclick="submitForm()">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,57 @@
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans tc-<uniquifier> {
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body{ margin: 0; padding: 0; }
+
+html {
+    background-color: #fffdf6;
+    font-family: 'Noto Sans TC', sans-serif;
+    align-items: center;
+    text-align:center;
+  }
+
+
+.resultbox{
+    align-items: center;
+    text-align:center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 0px ;
+    margin-bottom: 20px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.box1{
+    align-items: center;
+    text-align:center;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-left: 15%;
+    margin-right: 25%;
+    font-weight: 450;
+}
+
+
+#dietRecommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 將內容置中 */
+}
+
+#dietRecommendation img {
+  max-width: 100%; /* 圖片最大寬度為父元素的寬度 */
+  height: auto; /* 保持圖片比例 */
+  margin-bottom: 10px; /* 圖片之間添加一些間距 */
+}
+
+
